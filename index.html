@@ -39,6 +39,10 @@
     <section class="jumbotron text-center">
       <img src="img/mfh.png" alt="foto diri" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Mochammad Fakhrizal Hafidh</h1>
+      <a href="https://instagram.com/fakhrizalh" target="_blank"><i class="bi bi-instagram text-primary"></i></a>
+      <a href="https://facebook.com/fakhrizalha" target="_blank"><i class="bi bi-facebook text-primary"></i></a>
+      <a href="https://github.com/fakhrizalh" target="_blank"><i class="bi bi-github text-primary"></i></a>
+      <a href="mailto:fakhrizal.hafidh@gmail.com" target="_blank"><i class="bi bi-envelope text-primary"></i></a>
       <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -88,7 +92,7 @@
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
             <div class="card" data-aos="flip-right" data-aos-duration="1000">
-              <img src="img/projects/nubelson-fernandes-YaOONA_SKWg-unsplash.jpg" class="card-img-top" alt="Project-1" />
+              <img src="img/projects/nubelson-fernandes-YaOONA_SKWg-unsplash.jpg" class="card-img-top" id="project-img" alt="Project-1" style="height: 200px; object-fit: cover" />
               <div class="card-body">
                 <h5 class="card-title text-center">Special title treatment</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -97,7 +101,7 @@
           </div>
           <div class="col-md-4 mb-3">
             <div class="card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="100">
-              <img src="img/projects/artiom-vallat-1GntEP783rI-unsplash.jpg" class="card-img-top" alt="Project-2" />
+              <img src="img/projects/artiom-vallat-1GntEP783rI-unsplash.jpg" class="card-img-top" alt="Project-2" style="height: 200px; object-fit: cover" />
               <div class="card-body">
                 <h5 class="card-title text-center">Special title treatment</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -106,7 +110,7 @@
           </div>
           <div class="col-md-4 mb-3">
             <div class="card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200">
-              <img src="img/projects/joey-r-syRQqk4ory4-unsplash.jpg" class="card-img-top" alt="project-3" />
+              <img src="img/projects/joey-r-syRQqk4ory4-unsplash.jpg" class="card-img-top" alt="project-3" style="height: 200px; object-fit: cover" />
               <div class="card-body">
                 <h5 class="card-title text-center">Special title treatment</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -115,7 +119,7 @@
           </div>
           <div class="col-md-4 mb-3">
             <div class="card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="300">
-              <img src="img/projects/onur-binay-60x59t9fA-o-unsplash.jpg" class="card-img-top" alt="project-4" />
+              <img src="img/projects/onur-binay-60x59t9fA-o-unsplash.jpg" class="card-img-top" alt="project-4" style="height: 200px; object-fit: cover" />
               <div class="card-body">
                 <h5 class="card-title text-center">Special title treatment</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -124,7 +128,7 @@
           </div>
           <div class="col-md-4 mb-3">
             <div class="card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="400">
-              <img src="img/projects/visual-karsa-0swgaIFoWKU-unsplash.jpg" class="card-img-top" alt="project-5" />
+              <img src="img/projects/visual-karsa-0swgaIFoWKU-unsplash.jpg" class="card-img-top" alt="project-5" style="height: 200px; object-fit: cover" />
               <div class="card-body">
                 <h5 class="card-title text-center">Special title treatment</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -316,10 +320,11 @@
 
     <script>
       gsap.registerPlugin(TextPlugin);
-      gsap.to(".lead", { duration: 2, delay: 1.5, text: "Pranata Komputer | IT Enthusiast" });
+      gsap.to(".lead", { duration: 3, delay: 1.5, text: "Pranata Komputer | IT Enthusiast" });
       gsap.from(".jumbotron img", { duration: 1, rotateY: 360, opacity: 0 });
       gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: "bounce" });
       gsap.from(".display-4", { duration: 1, x: -50, opacity: 0, ease: "back", delay: 0.5 });
+      gsap.from(".bi", { duration: 1, x: -50, opacity: 0, ease: "back", delay: 0.5 });
     </script>
 
     <script>
